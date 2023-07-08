@@ -29,6 +29,20 @@ html {
 body {
     background: #eee;
 }
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+}
+.btn:hover {
+    background: var(--orange);
+    color: #fff;
+}
 .header {
     position: fixed;
     top: 0;
@@ -85,7 +99,7 @@ body {
     width: 50rem;
     height: 5rem;
     background: #fff;
-    border-radius: .5rem;
+    border-radius: 10px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -114,19 +128,23 @@ body {
 }
 .header .shopping-cart .box img {
     height: 10rem;
-    width: 130px;
-    margin-bottom: 70px;
+    width: 10rem;
+    /* margin-bottom: 70px; */
 }
 .header .shopping-cart {
     position: absolute;
     top: 110%;
-    right: 2rem;
+    right: -110%;
     padding:1rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
-    width: 30rem;
+    width: 35rem;
     background: #fff;
+}.header .shopping-cart.active {
+    right: 2rem;
+    transition: .6s all ease;
 }
+
 .header .shopping-cart .box {
     display: flex;
     align-items: center;
@@ -136,8 +154,36 @@ body {
 }
 .header .shopping-cart .box .fa-trash {
     position: absolute;
-    
+    font-size: 2rem;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color: var(--light-color);
+    transform: translateY(-50%);
 }
-
-
-
+.header .shopping-cart .box .fa-trash:hover {
+    color: var(--orange);
+}
+header .shopping-cart .box .content h3 {
+    color: va(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+header .shopping-cart .box .content span {
+    color: va(--light-color);
+    font-size: 1.6rem;
+}
+header .shopping-cart .box .content .quantity {
+    padding-left: 1rem;
+}
+header .shopping-cart .total {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+header .shopping-cart .btn {
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+}
