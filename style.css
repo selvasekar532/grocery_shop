@@ -38,6 +38,7 @@ body {
     border: .2rem solid var(--black);
     color: var(--black);
     cursor: pointer;
+    background: none;
 }
 .btn:hover {
     background: var(--orange);
@@ -140,9 +141,10 @@ body {
     box-shadow: var(--box-shadow);
     width: 35rem;
     background: #fff;
-}.header .shopping-cart.active {
+}
+.header .shopping-cart.active {
     right: 2rem;
-    transition: .6s all ease;
+    transition: .4s all ease;
 }
 
 .header .shopping-cart .box {
@@ -187,3 +189,43 @@ header .shopping-cart .btn {
     text-align: center;
     margin: 1rem 0;
 }
+.header .login-form {
+    position: absolute;
+    top: 110%;
+    width: 35rem;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+.header .login-form.active {
+    right: 2rem;
+    transition: .4s all ease;
+}
+.header .login-form h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.header .login-form .box {
+    margin: .7rem;
+    width: 100%;
+    background: #eee;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    color: var(--black);
+    text-transform: none;
+}
+.header .login-form p {
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: var(--light-color)
+}
+.header .login-form p a {
+    text-decoration: underline;
+    color: var(--orange);
+}
+
