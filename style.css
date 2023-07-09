@@ -90,9 +90,7 @@ body {
     background: var(--orange);
     color: #fff;
 }
-#menu-btn {
-    display: none;
-}
+
 .header .search-form {
     position: absolute;
     top: 110%;
@@ -229,3 +227,99 @@ header .shopping-cart .btn {
     color: var(--orange);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 2rem;
+    }
+}
+@media (min-width:992px) {
+    .header #menu-btn {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+    .header .search-form {
+        width: 90%;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem ;
+        background: #fff;
+    }
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+        cursor: pointer;
+    }
+    .header .navbar a:hover {
+        color: var(--orange);
+    }
+    .header .navbar.active {
+        right: 2rem;
+        transition: .4s all ease;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
