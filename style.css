@@ -29,6 +29,9 @@ html {
 body {
     background: #eee;
 }
+section {
+    padding: 2rem 9%;
+}
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -226,6 +229,34 @@ header .shopping-cart .btn {
     text-decoration: underline;
     color: var(--orange);
 }
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url(images/banner\ image2.webp);
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+.home .content {
+    text-align: center;
+    width: 60rem;
+}
+.home .content h3 {
+    color: var(--black);
+    font-size: 3rem;
+}
+.home .content h3 span {
+    color: var(--orange); 
+}
+.home .content h3 p {
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
 
 
 
@@ -280,6 +311,9 @@ header .shopping-cart .btn {
     }
     .header {
         padding: 2rem;
+    }
+    section {
+        padding: 2rem;;
     }
 }
 @media (min-width:992px) {
