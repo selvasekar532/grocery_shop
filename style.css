@@ -371,6 +371,7 @@ header .shopping-cart .btn {
     outline: var(--outline);
     outline-offset: -1rem;
     text-align: center;
+    transition: .2s linear;
 }
 .categories .box-container .box:hover {
     outline: var(--outline-hover);
@@ -387,7 +388,46 @@ header .shopping-cart .btn {
     line-height: 1.8;
     padding: 1rem 0;
 }
-
+/* .review-img img{
+    width: 20rem;
+} */
+.review .review-slider {
+    padding: 1rem;
+}
+.review .review-slider .box {
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    transition: .2s linear;
+}
+.review .review-slider .box:hover {
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+.review .review-slider .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.review .review-slider .box p {
+    padding: 1rem 0;
+    line-height: 1.8;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+.review .review-slider .box h3 {
+    color: var(--black);
+    font-size: 2.2rem;
+    padding-bottom: .5rem;
+}
+.review .review-slider .box .stars {
+    color: var(--orange);
+    font-size: 1.7rem;
+}
 
 
 
